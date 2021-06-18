@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <img id="carpet" src="assets/texture_wool.jpg">
+            <img id="wallpaper" src="assets/texture_walls.jpg">
+            <img id="image_1" src="assets/image_1.jpg">
+            <img id="image_2" src="assets/image_2.jpg">
+            <a-asset-item id="nasa_logo" src="assets/3D Models/nasa_logo.gltf"></a-asset-item>
+            <a-asset-item id="perseverance" src="assets/3D Models/perseverance.gltf"></a-asset-item>
+            <a-asset-item id="couch_1" src="assets/3D Models/couch.gltf"></a-asset-item>
+            <a-asset-item id="plant_1" src="assets/3D Models/plant_1.gltf"></a-asset-item>
+            <a-asset-item id="plant_2" src="assets/3D Models/plant_2.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity light="type: ambient; intensity: 0.2"></a-entity>
+
+        <a-entity light="type: directional;
+                         intensity: 0.2" position="-0.5 1 1"></a-entity>
+
+        <a-sky color="black"></a-sky>
+
+        <a-plane material="shader: flat;
+        src: #carpet;
+        repeat: 8 8;
+        normal-map: #carpet;
+        normal-texture-repeat: 8 8" rotation="-90 0 0" scale="11 9 1" shadow="receive: true"></a-plane>
+
+        <a-entity position="0 0 2.5">
+            <a-camera id="cam">
+                <a-cursor id="cursor" color="#c1121f" raycaster="objects: .clickable" animation__click="property: scale; startEvents: click; 
+                from: 0.1 0.1 0.1; to: 1 1 1; dur: 150" hovering-cursor></a-cursor>
+            </a-camera>
+        </a-entity>
+
+        <a-box position="0 2 4.18" rotation="0 180 0" material="src: #wallpaper; side: back;" scale="5.7 2 0.3" mask>
+            <a-entity text-adder="position: 0.05 0.1 0; text_val: \nThat's one small step for man,"
+                text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json;">
+            </a-entity>
+            <a-entity text-adder="position: 0.25 -0.1 0; text_val: one giant leap for mankind."
+                text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json;">
+            </a-entity>
+            <a-entity text-adder="position: 0.55 -0.25 0; text_val: - Neil Armstrong"
+                text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json;">
+            </a-entity>
+        </a-box>
+        <a-entity light="distance: 7; intensity: 0.8; penumbra: 0.6; type: point" position="-0.04819 2.16565 1.36522"
+            rotation=""></a-entity>
+
+        <a-box src="#wallpaper" position="0 2 4.4" repeat="5 5" scale="11 4 0.3"
+            light="color: #ffffff; intensity: 0.7; type: directional"></a-box>
+
+        <a-box src="#wallpaper" position="5.5 2 0" repeat="5 5" rotation="0 90 0" scale="9 4 0.3"
+            light="color: #ffffff; intensity: 0.5; type: directional"></a-box>
+        <a-image src="#image_1" position="5.3 2 0" height="2" width="4" rotation="0 90 0"></a-image>
+
+        <a-box src="#wallpaper" position="-5.5 2 0" repeat="5 5" rotation="0 90 0" scale="9 4 0.3"
+            light="color: #ffffff; intensity: 0.5; type: directional"></a-box>
+        <a-image src="#image_2" position="-5.3 2 0" height="2" width="4" rotation="0 90 0"></a-image>
+
+        <a-box src="#wallpaper" position="0 3.85 0" repeat="5 5" rotation="90 0 0" scale="11 9 0.3"
+            light="color: #ffffff; intensity: 0.5; type: directional"></a-box>
+
+        <a-entity id="logo" gltf-model="#nasa_logo" position="0 1.2 0" side="double" scale="0.05 0.05 0.05"
+            shadow="cast: true" rotate></a-entity>
+        <a-cylinder src="#wallpaper" repeat="3 3" height="0.5" radius="1" position="0 0.25 0" color="#333333"
+            shadow="cast: true"></a-cylinder>
+
+        <a-entity gltf-model="#couch_1" position="0 0.2 3.5" scale="0.0049 0.0049 0.003" rotation="0 180 0"></a-entity>
+        <a-entity gltf-model="#plant_1" position="4 0 3.3" scale="0.3 0.3 0.3"></a-entity>
+        <a-entity gltf-model="#plant_2" position="-4 0 3.3" scale="0.1 0.1 0.1"></a-entity>
+
+        <a-entity id="journey" class="clickable" look-at="#cam"
+            text-adder="position: 0 2.5 -4; text_val: \nNASA Museum\n- Start the Journey -; text_width: 5; text_color: grey"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json;
+            align: center" hovering>
+        </a-entity>
+    </a-scene>
+
+
+</body>
+
+</html>
