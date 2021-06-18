@@ -1,7 +1,7 @@
 AFRAME.registerComponent('mask', {
     init: function () {
         let geometry = new THREE.BoxGeometry(1, 1, 1)
-        geometry.faces.splice(4, 2) // cut out the top faces 
+        geometry.faces.splice(4, 2)
         let material = new THREE.MeshBasicMaterial({
             colorWrite: false
         })
