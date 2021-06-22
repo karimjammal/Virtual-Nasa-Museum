@@ -17,14 +17,23 @@
             <img id="wallpaper" src="assets/texture_walls.jpg">
             <img id="image_1" src="assets/image_1.jpg">
             <img id="image_2" src="assets/image_2.jpg">
+            <img id="mars_hor" src="assets/mars_logo.jpg">
             <img id="arrow" src="assets/arrow.png">
             <img id="line" src="assets/nasa text.png">
             <img id="earth" src="assets/earth.jpg">
             <img id="logo_2" src="assets/nasa logo 2.png">
+            <img id="moon_1" src="assets/moon_1.jpg">
+            <img id="earth_2" src="assets/earth_2.jpg">
+            <img id="earth_3" src="assets/earth_3.jpg">
             <img id="mars_1" src="assets/mars_1.jpg">
+            <img id="mars_2" src="assets/mars_2.jpg">
+            <img id="mars_3" src="assets/mars_3.jpg">
+            <img id="mars_4" src="assets/mars_4.jpg">
             <img id="general_1" src="assets/general_1.jpg">
             <a-asset-item id="nasa_logo" src="assets/3D Models/nasa_logo.gltf"></a-asset-item>
             <a-asset-item id="perseverance" src="assets/3D Models/perseverance.gltf"></a-asset-item>
+            <a-asset-item id="curiosity" src="assets/3D Models/curiosity.glb"></a-asset-item>
+            <a-asset-item id="opportunity" src="assets/3D Models/opportunity.gltf"></a-asset-item>
             <a-asset-item id="couch_1" src="assets/3D Models/couch.gltf"></a-asset-item>
             <a-asset-item id="plant_1" src="assets/3D Models/plant_1.gltf"></a-asset-item>
             <a-asset-item id="plant_2" src="assets/3D Models/plant_2.gltf"></a-asset-item>
@@ -34,6 +43,9 @@
             <a-asset-item id="frame4" src="assets/3D Models/frame_4.gltf"></a-asset-item>
             <a-asset-item id="frame5" src="assets/3D Models/frame_5.gltf"></a-asset-item>
             <a-asset-item id="frame6" src="assets/3D Models/frame_6.gltf"></a-asset-item>
+            <a-asset-item id="frame7" src="assets/3D Models/frame_7.gltf"></a-asset-item>
+            <a-asset-item id="frame8" src="assets/3D Models/frame_8.gltf"></a-asset-item>
+            <a-asset-item id="frame9" src="assets/3D Models/frame_9.gltf"></a-asset-item>
         </a-assets>
 
         <a-entity light="type: ambient; intensity: 0.2"></a-entity>
@@ -138,91 +150,292 @@
         </a-entity>
         <a-image src="#logo_2" position="3.5 3.1 -6.8" height="0.8" width="0.8"></a-image>
 
-        <a-box src="#wallpaper" position="0 3.85 -14.5" repeat="8 8" rotation="90 0 0" scale="15 20 0.3"></a-box>
+        <a-box src="#wallpaper" position="0 3.85 -14.5" repeat="8 8" rotation="90 0 0" scale="15 20 0.3"
+            shadow="receive: true"></a-box>
 
         <a-box material="shader: flat;
         src: #carpet;
         repeat: 10 10;
         normal-map: #carpet;
-        normal-texture-repeat: 10 10" rotation="-90 0 0" position="0 -0.05 -14.5" scale="15 20 0.1"
-            shadow="receive: true"></a-box>
+        normal-texture-repeat: 10 10" rotation="-90 0 0" position="0 -0.05 -14.5" scale="15 20 0.1"></a-box>
 
         <a-box src="#wallpaper" position="0 2 -24.35" repeat="6 6" scale="15 4 0.3"></a-box>
         <!-- End of Divider Box -->
 
 
+
         <!-- General Space Area-->
         <a-box src="#wallpaper" position="-7.35 2 -14.5" repeat="4 4" rotation="0 90 0" scale="20 4 0.3"></a-box>
         <a-image src="#general_1" position="-7.17 1.85 -6.2" rotation="0 90 0" height="3.2" width="2"></a-image>
+        <a-image src="#earth_2" scale="17.5 7 1" rotation="-90 90 0" position="-3.68 3.68 -15.91">
+        </a-image>
+        <a-image src="#moon_1" position="-3.69 1.89 -24.15" scale="7 3.7 1"></a-image>
+        <a-image src="#earth_3" position="-2.12 1.89 -7.16" scale="3.8 3.7 1"></a-image>
         <a-entity text-adder="position: -7.17 1.24 -5; text_val: \nAtlantis, 1985; text_width: 6; text_color: #ffffff"
             text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
             rotation="0 90 90">
         </a-entity>
 
+        <!-- Apollo 11 Section -->
         <a-entity gltf-model="#frame4" position="-6.8 0.7 -9.69" rotation="0 90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot"
-            rotation="-81.09 -24.62 68.88" position="-6.53 3.97 -10.41">
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
+            position="-6.12 4.33 -10.29">
         </a-entity>
-        <a-entity text-adder="position: -7.17 1.37 -9.57; text_val: \nApollo 11, 1969; text_width: 4; text_color: #ffffff"
+        <a-entity text-adder="position: -7.17 1.16 -9.42; text_val: \n1969; text_width: 10; text_color: #ffffff"
             text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
             rotation="0 90 90">
         </a-entity>
+        <a-entity text-adder="position: -7.17 3.13 -10.11; text_val: \nApollo 11; text_width: 4; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 90 0">
+        </a-entity>
 
+        <a-entity text-adder="position: -7.17 1.8 -12.9; text_val: \nThe primary objective of Apollo 11 was to complete a national goal set by President John F. Kennedy on May 25, 1961: perform a crewed lunar landing and return to Earth.
+            \nAdditional flight objectives included scientific exploration by the lunar module, or LM, crew, deployment of a television camera to transmit signals to Earth, and deployment of a solar wind composition experiment, seismic experiment package and a Laser Ranging Retroreflector. 
+            \nDuring the exploration, the two astronauts were to gather samples of lunar-surface materials for return to Earth. They also were to extensively photograph the lunar terrain, the deployed scientific equipment, the LM spacecraft, and each other, both with still and motion picture cameras. 
+            \nThis was to be the last Apollo mission to fly a free-return trajectory, which would enable a return to Earth with no engine firing, providing a ready abort of the mission at any time prior to lunar orbit insertion.; 
+            text_width: 2.6; text_color: #ffffff; text_wrapcount: 60"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 90 0">
+        </a-entity>
+        <!-- End of Apollo 11 Section -->
+
+        <!-- Pioneer 11 Section -->
         <a-entity gltf-model="#frame5" position="-6.8 0.7 -15.12" rotation="0 90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
-            position="-6.53 3.84 -16">
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
+            position="-6.12 4.33 -15.75">
+        </a-entity>
+        <a-entity text-adder="position: -7.17 1.16 -14.89; text_val: \n1972; text_width: 10; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 90 90">
+        </a-entity>
+        <a-entity text-adder="position: -7.17 3.13 -15.59; text_val: \nPioneer 11; text_width: 4; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 90 0">
         </a-entity>
 
+
+        <a-entity text-adder="position: -7.17 1.8 -18.32; text_val: \nDesigned as the first spacecraft to venture through the asteroid belt and explore the outer solar system, NASA approved the Pioneer 10 and 11 missions in February 1969. NASA’s Ames Research Center in California’s Silicon Valley managed the project and TRW Systems in Redondo Beach, California, built the two spacecraft. 
+            \nEach 571-pound probe carried 12 scientific instruments including an imaging system and used plutonium-238 in two radioisotope thermal generators (RTG) to supply power to their systems and instruments. 
+            At Jupiter's distance from the Sun, capturing enough solar energy would have required prohibitively large and heavy solar arrays.
+            \nMission planners retargeted Pioneer 11 to use Jupiter's giant gravity to slingshot the spacecraft across the solar system to explore Saturn. 
+            The decision carried a certain amount of risk as this gravity-assist maneuver required Pioneer 11 to pass much closer to Jupiter than its predecessor but the unique trajectory enabled Pioneer 11 to image Jupiter’s previously unexplored polar regions.; 
+            text_width: 2.6; text_color: #ffffff; text_wrapcount: 60"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 90 0">
+        </a-entity>
+        <!-- End of Pioneer 11 Section -->
+
+        <!-- Hubble Section -->
         <a-entity gltf-model="#frame6" position="-6.8 0.7 -20.59" rotation="0 90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
-            position="-6.53 3.84 -21.5">
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
+            position="-6.12 4.33 -21.23">
+        </a-entity>
+        <a-entity text-adder="position: -7.17 1.16 -20.34; text_val: \n1990; text_width: 10; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 90 90">
+        </a-entity>
+        <a-entity text-adder="position: -7.17 3.13 -20.95; text_val: \nHubble; text_width: 4; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 90 0">
         </a-entity>
 
-        <a-entity gltf-model="#frame6" position="-0.5 0.7 -11.52" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-85.55 48.34 27.6"
-            position="-0.92 4 -10.5">
+        <a-entity text-adder="position: -7.17 1.83 -23.25; text_val: \nNamed in honor of the trailblazing astronomer Edwin Hubble, the Hubble Space Telescope is a large, space-based observatory, which has revolutionized astronomy since its launch and deployment by the space shuttle Discovery in 1990. 
+        \nFar above rain clouds, light pollution, and atmospheric distortions, Hubble has a crystal-clear view of the universe. 
+        \nScientists have used Hubble to observe some of the most distant stars and galaxies yet seen, as well as the planets in our solar system.; 
+        text_width: 1.5; text_color: #ffffff; text_wrapcount: 30"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 90 0">
         </a-entity>
+        <!-- End of Hubble Section -->
+
+
+        <!-- ISS Section -->
+        <a-entity gltf-model="#frame7" position="-0.5 0.7 -11.52" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-85.55 48.34 27.6"
+            position="-0.92 4.15 -10.52">
+        </a-entity>
+        <a-entity text-adder="position: -0.15 1.16 -11.72; text_val: \n1998; text_width: 10; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity text-adder="position: -0.15 3.1 -10.68; text_val: \nInternational Space Station; text_width: 2.5; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 0">
         </a-entity>
 
-        <a-entity gltf-model="#frame6" position="-0.5 0.7 -16.88" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-85.55 48.34 27.6"
-            position="-0.92941 4 -15.94">
+        <a-entity text-adder="position: -0.15 1.83 -8.6; text_val: \nThe International Space Station is a modular space station in low Earth orbit. 
+        \nIt is a multinational collaborative project involving five participating space agencies: NASA, Roscosmos, JAXA, ESA, and CSA. 
+        \nThe ownership and use of the space station is established by intergovernmental treaties and agreements.; 
+        text_width: 2; text_color: #ffffff; text_wrapcount: 30"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 -90 0">
         </a-entity>
+        <!-- End of ISS Section -->
+
+
+        <!-- Artemis Section -->
+        <a-entity gltf-model="#frame8" position="-0.5 0.7 -16.88" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-85.55 48.34 27.6"
+            position="-0.92 4.15 -15.88">
+        </a-entity>
+        <a-entity text-adder="position: -0.15 3.1 -16.48; text_val: \nArtemis; text_width: 4; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 0">
         </a-entity>
 
-        <a-entity gltf-model="#frame6" position="-0.5 0.7 -22.24" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-85.55 48.34 27.6"
-            position="-0.92941 4 -21.35">
+        <a-entity text-adder="position: -0.15 1.75 -13.48; text_val: \nNew science investigations and technology experiments are leading the return to the Moon beginning in 2021. 
+        \nThrough a variety of upcoming robotic and human activities on the surface and in orbit around the Moon, we will better understand the universe and our home planet.
+        \nDuring the Artemis program, NASA will land the first woman and first person of color on the Moon, using innovative technologies to explore more of the lunar surface than ever before. 
+        \nWe will collaborate with our commercial and international partners and establish sustainable exploration for the first time. Then, we will use what we learn on and around the Moon to take the next giant leap – sending astronauts to Mars.; 
+        text_width: 3; text_color: #ffffff; text_wrapcount: 55"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 -90 0">
         </a-entity>
+        <!-- End of Artemis Section -->
+
+
+        <!-- New Horizon Section -->
+        <a-entity gltf-model="#frame9" position="-0.5 0.7 -22.24" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-85.55 48.34 27.6"
+            position="-0.92 4.15 -21.24">
+        </a-entity>
+        <a-entity text-adder="position: -0.15 1.2 -22.5; text_val: \n2006; text_width: 10; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity text-adder="position: -0.15 3.13 -21.64; text_val: \nNew Horizon; text_width: 4; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 0">
         </a-entity>
 
+        <a-entity text-adder="position: -0.15 1.83 -18.72; text_val: \nThe New Horizons mission is helping us understand worlds at the edge of our solar system by making the first reconnaissance of the dwarf planet Pluto and by venturing deeper into the distant, mysterious Kuiper Belt – a relic of solar system formation.         
+        \nNew Horizons launched on Jan. 19, 2006. It swung past Jupiter for a gravity boost and scientific studies in February 2007, and conducted a six-month-long reconnaissance flyby study of Pluto and its moons in summer 2015, culminating with Pluto closest approach on July 14, 2015. 
+        \nAs part of an extended mission, pending NASA approval, the spacecraft is expected to head farther into the Kuiper Belt to examine another of the ancient, icy mini-worlds in that vast region, at least a billion miles beyond Neptune’s orbit.
+        \nSending a spacecraft on this long journey is helping us to answer basic questions about the surface properties, geology, interior makeup and atmospheres on these bodies.; 
+        text_width: 3.2; text_color: #ffffff; text_wrapcount: 65"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 -90 0">
+        </a-entity>
+        <!-- End of New Horizon Section -->
         <!-- End of General Space Area-->
 
+
+
         <!-- Mars Exploration Area-->
-        <a-image src="#mars_1" position="7.17 1.85 -6" rotation="0 90 0" height="3.2" width="2"></a-image>
+        <a-image src="#mars_hor" scale="17.5 7 1" rotation="90 90 0" position="3.68 3.68 -15.91">
+        </a-image>
+        <a-image src="#mars_4" position="7.17 1.85 -6" rotation="0 90 0" height="3.2" width="2"></a-image>
+        <a-image src="#mars_2" position="3.69 1.89 -24.15" scale="7 3.7 1"></a-image>
+        <a-image src="#mars_3" position="2.12 1.89 -7.16" scale="3.8 3.7 1"></a-image>
         <a-entity
             text-adder="position: 7.17 1.65 -7.2; text_val: \nPerseverance, 2021; text_width: 6; text_color: #ffffff"
             text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
             rotation="0 -90 90">
         </a-entity>
 
+        <!-- Perseverance Section -->
         <a-entity gltf-model="#frame1" position="6.8 0.7 -11.46" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
-            position="6.53 3.84 -10.50">
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
+            position="6.12 4.15 -10.41">
         </a-entity>
+        <a-entity text-adder="position: 7.17 1.12 -11.67; text_val: \n2021; text_width: 10; text_color: #ffffff"
+            text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity text-adder="position:7.17 3.10 -10.88; text_val: \nPerseverance; text_width: 3.5; text_color: #ffffff"
+            text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 0">
+        </a-entity>
+        <a-entity
+            text-adder="position: 7.17 1.8 -8.8; text_val: \nThe Mars Perseverance rover mission is part of NASA's Mars Exploration Program, a long-term effort of robotic exploration of the Red Planet.
+        \nThe Mars Perseverance mission addresses high-priority science goals for Mars exploration, including key questions about the potential for life on Mars. 
+        \nThe mission takes the next step by not only seeking sign of habitable conditions on Mars in the ancient past, but also searching for signs of past microbial life itself.  
+        \nThe Mars Perseverance rover introduces a drill that can collect core samples of the most promising rocks and soils and set them aside in a cache on the surface of Mars.; text_width: 1.5; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 -90 0">
+        </a-entity>
+        <a-entity gltf-model="#perseverance" position="1.77 0 -10.57" rotation="0 105 0" scale="0.6 0.6 0.6"
+            shadow="cast: true"></a-entity>
+        <a-entity look-at="#cam"
+            text-adder="position: 1.77 2.2 -10.57; text_val: \nPerseverance Rover; text_width: 6; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity light="distance: 4; intensity: 2; type: point" position="3.59 0.22 -10.61"></a-entity>
+        <!-- End of Perseverance Section -->
 
+        <!-- Curiosity Section -->
         <a-entity gltf-model="#frame2" position="6.8 0.7 -16.96" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
-            position="6.53 3.84 -16">
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
+            position="6.12 4.15 -15.81">
+        </a-entity>
+        <a-entity text-adder="position: 7.17 1.12 -17.2; text_val: \n2012; text_width: 10; text_color: #ffffff"
+            text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity text-adder="position:7.17 3.10 -16.53; text_val: \nCuriosity; text_width: 3.7; text_color: #ffffff"
+            text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 0">
         </a-entity>
 
-        <a-entity gltf-model="#frame3" position="6.8 0.7 -22.41" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
-        <a-entity light="distance: 4; intensity: 3; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
-            position="6.53 3.84 -21.5">
+        <a-entity text-adder="position: 7.17 1.8 -13.78; text_val: \nWith its rover named Curiosity, Mars Science Laboratory mission is part of NASA's Mars Exploration Program, a long-term effort of robotic exploration of the red planet. 
+        \nCuriosity was designed to assess whether Mars ever had an environment able to support small life forms called microbes. 
+        \nIn other words, its mission is to determine the planet's habitability. 
+        \nThe rover carries a radioisotope power system that generates electricity from the heat of plutonium's radioactive decay. 
+        \nThis power source gives the mission an operating lifespan on Mars' surface of a full martian year (687 Earth days) or more, while also providing significantly greater mobility and operational flexibility, enhanced science payload capability, and exploration of a much larger range of latitudes and altitudes than was possible on previous missions to Mars.;
+        text_width: 2.5; text_color: #ffffff; text_wrapcount: 55"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 -90 0">
         </a-entity>
+        <a-entity gltf-model="#curiosity" position="1.77 0 -15.95" scale="0.6 0.6 0.6" rotation="0 90 0"
+            shadow="cast: true"></a-entity>
+        <a-entity look-at="#cam"
+            text-adder="position: 1.77 2.2 -15.95; text_val: \nCuriosity Rover; text_width: 6; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity light="distance: 4; intensity: 2; type: point" position="3.59 0.22 -15.96"></a-entity>
+        <!-- End of Curiosity Section -->
+
+        <!-- Opportunity Section -->
+        <a-entity gltf-model="#frame3" position="6.8 0.7 -22.41" rotation="0 -90 0" scale="0.07 0.07 0.07"></a-entity>
+        <a-entity light="distance: 4; intensity: 2; penumbra: 0.6; type: spot" rotation="-81.09 -24.62 68.88"
+            position="6.12 4.15 -21.25">
+        </a-entity>
+        <a-entity text-adder="position: 7.17 1.22 -22.67; text_val: \n2003; text_width: 10; text_color: #ffffff"
+            text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity
+            text-adder="position:7.17 3.10 -21.58; text_val: \nSpirit & Opportunity; text_width: 3.5; text_color: #ffffff"
+            text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity text-adder="position: 7.17 1.82 -19.16; text_val: \nNASA's twin robot geologists, the Mars Exploration Rovers, launched toward Mars on June 10 and July 7, 2003, in search of answers about the history of water on Mars.
+        They landed on Mars January 3 and January 24, 2004.
+        \nThe Mars Exploration Rover mission is part of NASA's Mars Exploration Program, a long-term effort of robotic exploration of the red planet.
+        \nPrimary among the mission's scientific goals is to search for and characterize a wide range of rocks and soils that hold clues to past water activity on Mars. 
+        \nThe spacecraft are targeted to sites on opposite sides of Mars that appear to have been affected by liquid water in the past. The landing sites are at Gusev Crater, a possible former lake in a giant impact crater, and Meridiani Planum, where mineral deposits (hematite) suggest Mars had a wet past.
+        \nAfter the airbag-protected landing craft settled onto the surface and opened, the rovers rolled out to take panoramic images. 
+        These images give scientists the information they need to select promising geological targets that tell part of the story of water in Mars' past. Then, the rovers drive to those locations to perform on-site scientific investigations.; 
+        text_width: 2.7; text_color: #ffffff; text_wrapcount: 70"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: left"
+            rotation="0 -90 0">
+        </a-entity>
+        <a-entity gltf-model="#opportunity" position="1.77 0.7 -21.57" rotation="0 -110 0" scale="0.1 0.1 0.1"
+            shadow="cast: true">
+        </a-entity>
+        <a-entity look-at="#cam"
+            text-adder="position: 1.77 2.2 -21.57; text_val: \nOpportunity Rover; text_width: 6; text_color: #ffffff"
+            text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
+            rotation="0 -90 90">
+        </a-entity>
+        <a-entity light="distance: 4; intensity: 2; type: point" position="3.59 0.22 -21.64"></a-entity>
+        <!-- End of Opportunity Section -->
 
         <a-box src="#wallpaper" position="7.35 2 -14.5" repeat="6 6" rotation="0 90 0" scale="20 4 0.3"></a-box>
-
         <!-- End of  Mars Exploration Area-->
 
     </a-scene>
