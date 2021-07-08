@@ -1,0 +1,72 @@
+<a-assets>
+            <img id="carpet" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/texture_wool.jpg">
+            <img id="wallpaper" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/texture_walls.jpg">
+            <img id="image_1" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/image_1.jpg">
+            <img id="image_2" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/image_2.jpg">
+            <img id="mars_hor" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/mars_logo.jpg">
+            <img id="arrow" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/arrow.png">
+            <img id="line" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/nasa text.png">
+            <img id="earth" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/earth.jpg">
+            <img id="logo_2" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/nasa logo 2.png">
+            <img id="moon_1" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/moon_1.jpg">
+            <img id="earth_2" crossorigin="anonymous"  src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/earth_2.jpg">
+            <img id="earth_3" crossorigin="anonymous"  src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/earth_3.jpg">
+            <img id="mars_1" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/mars_1.jpg">
+            <img id="mars_2" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/mars_2.jpg">
+            <img id="mars_3" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/mars_3.jpg">
+            <img id="mars_4" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/mars_4.jpg">
+            <img id="general_1" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/general_1.jpg">
+            <a-asset-item id="nasa_logo" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/nasa_logo.gltf"></a-asset-item>
+            <a-asset-item id="perseverance" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/perseverance.gltf"></a-asset-item>
+            <a-asset-item id="curiosity" crossorigin="anonymous"  src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/curiosity.glb"></a-asset-item>
+            <a-asset-item id="opportunity" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/opportunity.gltf"></a-asset-item>
+            <a-asset-item id="couch_1" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/couch.gltf"></a-asset-item>
+            <a-asset-item id="plant_1" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/plant_1.gltf"></a-asset-item>
+            <a-asset-item id="plant_2" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/plant_2.gltf"></a-asset-item>
+            <a-asset-item id="frame1" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_1.gltf"></a-asset-item>
+            <a-asset-item id="frame2" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_2.gltf"></a-asset-item>
+            <a-asset-item id="frame3" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_3.gltf"></a-asset-item>
+            <a-asset-item id="frame4" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_4.gltf"></a-asset-item>
+            <a-asset-item id="frame5" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_5.gltf"></a-asset-item>
+            <a-asset-item id="frame6" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_6.gltf"></a-asset-item>
+            <a-asset-item id="frame7" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_7.gltf"></a-asset-item>
+            <a-asset-item id="frame8" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_8.gltf"></a-asset-item>
+            <a-asset-item id="frame9" crossorigin="anonymous" src="https://raw.githubusercontent.com/karimjammal/Virtual-Nasa-Museum/master/assets/3D Models/frame_9.gltf"></a-asset-item>
+        </a-assets>
+
+
+        <a-assets>
+                    <img id="carpet" src="assets/texture_wool.jpg">
+                    <img id="wallpaper" src="assets/texture_walls.jpg">
+                    <img id="image_1" src="assets/image_1.jpg">
+                    <img id="image_2" src="assets/image_2.jpg">
+                    <img id="mars_hor" src="assets/mars_logo.jpg">
+                    <img id="arrow" src="assets/arrow.png">
+                    <img id="line" src="assets/nasa text.png">
+                    <img id="earth" src="assets/earth.jpg">
+                    <img id="logo_2" src="assets/nasa logo 2.png">
+                    <img id="moon_1" src="assets/moon_1.jpg">
+                    <img id="earth_2" src="assets/earth_2.jpg">
+                    <img id="earth_3" src="assets/earth_3.jpg">
+                    <img id="mars_1" src="assets/mars_1.jpg">
+                    <img id="mars_2" src="assets/mars_2.jpg">
+                    <img id="mars_3" src="assets/mars_3.jpg">
+                    <img id="mars_4" src="assets/mars_4.jpg">
+                    <img id="general_1" src="assets/general_1.jpg">
+                    <a-asset-item id="nasa_logo" src="assets/3D Models/nasa_logo.gltf"></a-asset-item>
+                    <a-asset-item id="perseverance" src="assets/3D Models/perseverance.gltf"></a-asset-item>
+                    <a-asset-item id="curiosity" src="assets/3D Models/curiosity.glb"></a-asset-item>
+                    <a-asset-item id="opportunity" src="assets/3D Models/opportunity.gltf"></a-asset-item>
+                    <a-asset-item id="couch_1" src="assets/3D Models/couch.gltf"></a-asset-item>
+                    <a-asset-item id="plant_1" src="assets/3D Models/plant_1.gltf"></a-asset-item>
+                    <a-asset-item id="plant_2" src="assets/3D Models/plant_2.gltf"></a-asset-item>
+                    <a-asset-item id="frame1" src="assets/3D Models/frame_1.gltf"></a-asset-item>
+                    <a-asset-item id="frame2" src="assets/3D Models/frame_2.gltf"></a-asset-item>
+                    <a-asset-item id="frame3" src="assets/3D Models/frame_3.gltf"></a-asset-item>
+                    <a-asset-item id="frame4" src="assets/3D Models/frame_4.gltf"></a-asset-item>
+                    <a-asset-item id="frame5" src="assets/3D Models/frame_5.gltf"></a-asset-item>
+                    <a-asset-item id="frame6" src="assets/3D Models/frame_6.gltf"></a-asset-item>
+                    <a-asset-item id="frame7" src="assets/3D Models/frame_7.gltf"></a-asset-item>
+                    <a-asset-item id="frame8" src="assets/3D Models/frame_8.gltf"></a-asset-item>
+                    <a-asset-item id="frame9" src="assets/3D Models/frame_9.gltf"></a-asset-item>
+                </a-assets>

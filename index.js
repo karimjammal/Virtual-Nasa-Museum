@@ -1,15 +1,15 @@
 AFRAME.registerComponent('mask', {
     init: function () {
-        let geometry = new THREE.BoxGeometry(1, 1, 1)
-        geometry.faces.splice(4, 2)
+        let geometry = new THREE.BoxGeometry(1, 1, 1);
+        geometry.faces.splice(4, 2);
         let material = new THREE.MeshBasicMaterial({
             colorWrite: false
         })
-        let mesh = new THREE.Mesh(geometry, material)
-        mesh.scale.set(1.1, 1.1, 1.1)
-        this.el.object3D.add(mesh)
+        let mesh = new THREE.Mesh(geometry, material);
+        mesh.scale.set(1.1, 1.1, 1.1);
+        this.el.object3D.add(mesh);
     }
-})
+});
 
 AFRAME.registerComponent('rotate', {
     init: function () {
@@ -23,10 +23,96 @@ AFRAME.registerComponent('rotate', {
             loop: 'true'
         });
     }
-})
+});
+
+AFRAME.registerComponent('show-desc', {
+    schema: {
+        name_id: { type: 'string' },
+        text_id: { type: 'string' },
+        cam_id: { type: 'string' }
+    },
+
+    init: function () {
+        let text = document.querySelector(`#${this.data.text_id}`);
+        let name = document.querySelector(`#${this.data.name_id}`);
+        let cam = document.querySelector(`#${this.data.cam_id}`);
+        let current = document.querySelector("#cameraRig");
+
+        text.setAttribute("visible", "false");
+        name.setAttribute("visible", "false");
+        cam.setAttribute("visible", "false");
+    },
+
+    tick: function () {
+
+        let current = document.querySelector("#cameraRig");
+        let text = document.querySelector(`#${this.data.text_id}`);
+        let name = document.querySelector(`#${this.data.name_id}`);
+        let cam = document.querySelector(`#${this.data.cam_id}`);
+
+        let targetPos = this.el.object3D.position;
+        let currentPos = current.object3D.position;
+
+        let distance = currentPos.length() - targetPos.length();
+
+        if (distance <= 4.1 && distance >= 0) {
+            text.setAttribute("visible", "true");
+            name.setAttribute("visible", "true");
+            cam.setAttribute("visible", "true");
+        } else {
+            text.setAttribute("visible", "false");
+            name.setAttribute("visible", "false");
+            cam.setAttribute("visible", "false");
+        }
+    }
+});
+
+
+AFRAME.registerComponent('show-desc-rotated-frame', {
+    schema: {
+        name_id: { type: 'string' },
+        text_id: { type: 'string' },
+        cam_id: { type: 'string' }
+    },
+
+    init: function () {
+        let text = document.querySelector(`#${this.data.text_id}`);
+        let name = document.querySelector(`#${this.data.name_id}`);
+        let cam = document.querySelector(`#${this.data.cam_id}`);
+        let current = document.querySelector("#cameraRig");
+
+        text.setAttribute("visible", "false");
+        name.setAttribute("visible", "false");
+        cam.setAttribute("visible", "false");
+    },
+
+    tick: function () {
+
+        let current = document.querySelector("#cameraRig");
+        let text = document.querySelector(`#${this.data.text_id}`);
+        let name = document.querySelector(`#${this.data.name_id}`);
+        let cam = document.querySelector(`#${this.data.cam_id}`);
+
+        let targetPos = this.el.object3D.position;
+        let currentPos = current.object3D.position;
+
+        let distance = targetPos.length() - currentPos.length();
+
+        if (distance <= 3 && distance >= -3) {
+            text.setAttribute("visible", "true");
+            name.setAttribute("visible", "true");
+            cam.setAttribute("visible", "true");
+        } else {
+            text.setAttribute("visible", "false");
+            name.setAttribute("visible", "false");
+            cam.setAttribute("visible", "false");
+        }
+    }
+});
+
 
 AFRAME.registerComponent('hovering', {
-    init: function(){
+    init: function () {
 
         this.el.setAttribute('animation__enter', {
             property: 'text.width',
@@ -44,30 +130,32 @@ AFRAME.registerComponent('hovering', {
             startEvents: 'mouseleave'
         });
     }
-})
+});
 
-AFRAME.registerComponent('hovering-cursor', {
-    init: function(){
-        
+AFRAME.registerComponent('hover-camera-logo', {
+    init: function () {
+
+        this.el.addEventListener('mouseenter', function() {
+            console.log("hello world"); // testing purposes
+        });
+
         this.el.setAttribute('animation__enter', {
-            property: 'material.color',
-            to: '#8ac926',
+            property: 'color',
+            to: '#e76f51',
             dur: 300,
             easing: 'linear',
             startEvents: 'mouseenter'
         });
 
         this.el.setAttribute('animation__leave', {
-            property: 'material.color',
-            to: '#c1121f',
+            property: 'color',
+            to: '#ffffff',
             dur: 300,
             easing: 'linear',
             startEvents: 'mouseleave'
         });
     }
-})
-
-
+});
 
 AFRAME.registerComponent('text-adder', {
     schema: {
@@ -101,3 +189,5 @@ AFRAME.registerComponent('text-adder', {
         this.el.setAttribute('material', 'visible', `${this.data.material_visible}`);
     }
 });
+
+
