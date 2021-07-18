@@ -61,7 +61,8 @@
                 <img id="hubble_360" src="assets/hubble_360.jpg">
                 <img id="iss_360" src="assets/iss_360.jpg">
                 <img id="apollo_360" src="assets/apollo_360.jpg">
-                <video id="hubb" src="assets/hubble_tour_360.mp4" autoplay></video>
+                <img id="artemis_360" src="assets/artemis_360.jpg">
+                <img id="pioneer_360" src="assets/pioneer_360.png">
                 <a-asset-item id="nasa_logo" src="assets/3D Models/nasa_logo.gltf"></a-asset-item>
                 <a-asset-item id="perseverance" src="assets/3D Models/perseverance.gltf"></a-asset-item>
                 <a-asset-item id="curiosity" src="assets/3D Models/curiosity.glb"></a-asset-item>
@@ -177,18 +178,6 @@
                 rotation="-90 0 0" position="-0.024 2.62 -0.037"></a-entity>
             <!-- <a-cylinder src="#wallpaper" repeat="3 3  -->
 
-            <a-curvedimage position="0 1.9 0" src="#hubble_360" theta-length="360" scale="3 2 3" height="1.87"
-                radius="0.707" visible="false">
-            </a-curvedimage>
-
-            <a-curvedimage position="0 1.9 0" src="#iss_360" theta-length="360" scale="3 2 3" height="1.87"
-                radius="0.707" visible="false">
-            </a-curvedimage>
-
-            <a-curvedimage position="0 1.9 0" src="#apollo_360" theta-length="360" scale="3 2 3" height="1.12"
-                radius="0.707" visible="false">
-            </a-curvedimage>
-
             <!-- <a-entity gltf-model="#couch_1" position="0 0.2 3.5" scale="0.0049 0.0049 0.003" rotation="0 180 0">
             </a-entity>
             <a-entity gltf-model="#plant_1" position="4 0 3.3" scale="0.3 0.3 0.3"></a-entity>
@@ -264,7 +253,7 @@
                     rotation="0 90 90">
                 </a-entity>
                 <a-image src="#cam_1" id="apollo-cam" position="-7.17 1.95 -9.42" rotation="0 90 0" scale="0.3 0.3 0"
-                    geometry="height: 1.5; width: 2" hover-camera-logo></a-image>
+                    geometry="height: 1.5; width: 2" show-image-rotated="name_id: app_360; btn_id: apollo_back"></a-image>
                 <a-entity id="apollo_name"
                     text-adder="position: -7.17 3.13 -10.11; text_val: \nApollo 11; text_width: 4; text_color: #ffffff"
                     text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -294,7 +283,7 @@
                     rotation="0 90 90">
                 </a-entity>
                 <a-image src="#cam_1" id="pioneer-cam" position="-7.17 1.95 -14.89" rotation="0 90 0" scale="0.3 0.3 0"
-                    geometry="height: 1.5; width: 2"></a-image>
+                    geometry="height: 1.5; width: 2" show-image-rotated="name_id: pio_360; btn_id: pioneer_back"></a-image>
                 <a-entity id="pioneer_name"
                     text-adder="position: -7.17 3.13 -15.59; text_val: \nPioneer 11; text_width: 4; text_color: #ffffff"
                     text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -325,7 +314,7 @@
                     rotation="0 90 90">
                 </a-entity>
                 <a-image src="#cam_1" id="hubble-cam" position="-7.17 1.95 -20.34" rotation="0 90 0" scale="0.3 0.3 0"
-                    geometry="height: 1.5; width: 2"></a-image>
+                    geometry="height: 1.5; width: 2" show-image-rotated="name_id: hub_360; btn_id: hubble_back"></a-image>
                 <a-entity id="hubble_name"
                     text-adder="position: -7.17 3.13 -20.95; text_val: \nHubble; text_width: 4; text_color: #ffffff"
                     text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -355,7 +344,7 @@
                     rotation="0 -90 90">
                 </a-entity>
                 <a-image src="#cam_1" id="iss-cam" position="-0.155 1.95 -11.72" rotation="0 -90 0" scale="0.3 0.3 0"
-                    geometry="height: 1.5; width: 2" material=""></a-image>
+                    geometry="height: 1.5; width: 2" show-sky="name_id: iss_360; btn_id: iss_back"></a-image>
                 <a-entity id="iss_name"
                     text-adder="position: -0.15 3.1 -10.68; text_val: \nInternational Space Station; text_width: 2.5; text_color: #ffffff"
                     text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -380,7 +369,7 @@
                     position="-0.92 4.15 -15.88">
                 </a-entity>
                 <a-image src="#cam_1" id="artemis-cam" position="-0.155 1.95 -17.11" rotation="0 -90 0"
-                    scale="0.3 0.3 0" geometry="height: 1.5; width: 2" material=""></a-image>
+                    scale="0.3 0.3 0" geometry="height: 1.5; width: 2" show-sky="name_id: artemis_360; btn_id: artemis_back"></a-image>
                 <a-entity id="artemis_name"
                     text-adder="position: -0.15 3.1 -16.48; text_val: \nArtemis; text_width: 4; text_color: #ffffff"
                     text="font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -457,7 +446,8 @@
                     rotation="0 -90 90">
                 </a-entity>
                 <a-image src="#cam_1" id="perseverance-cam" position="7.17 1.95 -11.68" rotation="0 -90 0"
-                    scale="0.3 0.3 0" geometry="height: 1.5; width: 2" show-image="name_id: perse_360; btn_id: perseverance_back"></a-image>
+                    scale="0.3 0.3 0" geometry="height: 1.5; width: 2"
+                    show-image="name_id: perse_360; btn_id: perseverance_back"></a-image>
                 <a-entity id="perseverance_name"
                     text-adder="position:7.17 3.10 -10.88; text_val: \nPerseverance; text_width: 3.5; text_color: #ffffff"
                     text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -493,7 +483,7 @@
                     rotation="0 -90 90">
                 </a-entity>
                 <a-image src="#cam_1" id="curiosity-cam" position="7.17 1.95 -17.2" rotation="0 -90 0" scale="0.3 0.3 0"
-                    geometry="height: 1.5; width: 2"></a-image>
+                    geometry="height: 1.5; width: 2" show-sky="name_id: cur_360; btn_id: curiosity_back"></a-image>
                 <a-entity id="curiosity_name"
                     text-adder="position:7.17 3.10 -16.53; text_val: \nCuriosity; text_width: 3.7; text_color: #ffffff"
                     text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -531,7 +521,8 @@
                     rotation="0 -90 90">
                 </a-entity>
                 <a-image src="#cam_1" id="opportunity-cam" position="7.17 2.05 -22.67" rotation="0 -90 0"
-                    scale="0.3 0.3 0" geometry="height: 1.5; width: 2"></a-image>
+                    scale="0.3 0.3 0" geometry="height: 1.5; width: 2"
+                    show-image="name_id: opo_360; btn_id: opportunity_back"></a-image>
                 <a-entity id="opportunity_name"
                     text-adder="position:7.17 3.10 -21.58; text_val: \nSpirit & Opportunity; text_width: 3.5; text_color: #ffffff"
                     text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json; align: center"
@@ -568,20 +559,84 @@
             <a-curvedimage id="perse_360" position="7.17 1.9 -11.68" src="#pers_360" theta-length="360" scale="3 3 3"
                 height="1.049" radius="0.707" visible="false">
             </a-curvedimage>
-            <a-entity id="perseverance_back" 
+            <a-entity id="perseverance_back"
                 text-adder="position: 8.73 2.87 -11.66; text_val: \nGo back; text_width: 2; text_color: #ffffff; text_wrapcount: 10"
                 text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
                 rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
-                show-museum="name_id: perse_360" visible="false">
+                remove-image="name_id: perse_360" visible="false">
             </a-entity>
 
             <a-curvedimage id="curi_360" position="7.17 1.9 -17.2" src="#cur_360" theta-length="360" scale="3 3 3"
                 height="1.12" radius="0.707" visible="false">
             </a-curvedimage>
+            <a-entity id="curiosity_back"
+                text-adder="position: 8.73 2.87 -17.2; text_val: \nGo back; text_width: 2; text_color: #e76f51; text_wrapcount: 10"
+                text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
+                rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
+                remove-sky visible="false">
+            </a-entity>
 
             <a-curvedimage id="opo_360" position="7.17 1.9 -22.67" src="#opp_360" theta-length="360" scale="3 2 3"
                 height="1.706" radius="0.707" visible="false">
             </a-curvedimage>
+            <a-entity id="opportunity_back"
+                text-adder="position: 8.73 2.87 -22.65; text_val: \nGo back; text_width: 2; text_color: #ffffff; text_wrapcount: 10"
+                text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
+                rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
+                remove-image="name_id: opo_360" visible="false">
+            </a-entity>
+
+            <a-curvedimage position="-7.17 1.9 -9.42" id="app_360" src="#apollo_360" theta-length="360" scale="3 3 3"
+                height="1.12" radius="0.707" visible="false">
+            </a-curvedimage>
+            <a-entity id="apollo_back"
+                text-adder="position: -8.73 2.87 -9.42; text_val: \nGo back; text_width: 2; text_color: #ffffff; text_wrapcount: 10"
+                text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
+                rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
+                remove-image-rotated="name_id: app_360" visible="false">
+            </a-entity>
+
+            <a-curvedimage position="-7.17 1.9 -14.89" id="pio_360" src="#pioneer_360" theta-length="360" scale="3 3 3"
+                height="1.74" radius="0.707" rotation="0 90 0" visible="false">
+            </a-curvedimage>
+            <a-entity id="pioneer_back"
+                text-adder="position: -8.73 2.87 -14.89; text_val: \nGo back; text_width: 2; text_color: #ffffff; text_wrapcount: 10"
+                text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
+                rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
+                remove-image-rotated="name_id: pio_360" visible="false">
+            </a-entity>
+
+            <a-curvedimage position="-7.17 1.9 -20.34" id="hub_360" src="#hubble_360" theta-length="360" scale="3 2 3"
+                height="1.87" radius="0.707" rotation="0 -90 0" visible="false">
+            </a-curvedimage>
+            <a-entity id="hubble_back"
+                text-adder="position: -8.73 2.87 -20.34; text_val: \nGo back; text_width: 2; text_color: #ffffff; text_wrapcount: 10"
+                text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
+                rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
+                remove-image-rotated="name_id: hub_360" visible="false">
+            </a-entity>
+
+            <a-curvedimage position="-0.15 1.9 -15.88" id="art_360" src="#artemis_360" theta-length="360" scale="3 2 3"
+                height="1.87" radius="0.707" visible="false">
+            </a-curvedimage>
+            <a-entity id="artemis_back"
+                text-adder="position: 1.71 2.87 -15.88; text_val: \nGo back; text_width: 2; text_color: #ffffff; text_wrapcount: 10"
+                text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
+                rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
+                remove-sky visible="false">
+            </a-entity>
+
+            <a-curvedimage position="-0.15 1.9 -11.72" id="is_360" src="#iss_360" theta-length="360" scale="3 2 3"
+                height="1.87" radius="0.707" visible="false">
+            </a-curvedimage>
+            <a-entity id="iss_back"
+                text-adder="position: 1.71 2.87 -11.72; text_val: \nGo back; text_width: 2; text_color: #006d77; text_wrapcount: 10"
+                text="font: https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/rajdhani/Rajdhani-Medium.json"
+                rotation="0 -90 0" position="6.48245 2.6148 -12.10051" look-at="#cameraRig" hovering-back-button
+                remove-sky visible="false">
+            </a-entity>
+
+
 
         </a-scene>
     </div>

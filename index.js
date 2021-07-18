@@ -96,9 +96,9 @@ AFRAME.registerComponent('show-desc-rotated-frame', {
         let targetPos = this.el.object3D.position;
         let currentPos = current.object3D.position;
 
-        let distance = targetPos.length() - currentPos.length();
+        let distance = currentPos.length() - targetPos.length();
 
-        if (distance <= 3 && distance >= -3) {
+        if (distance <= 4.5 && distance >= 1.3) {
             text.setAttribute("visible", "true");
             name.setAttribute("visible", "true");
             cam.setAttribute("visible", "true");
